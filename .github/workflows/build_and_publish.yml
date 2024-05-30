@@ -52,7 +52,7 @@ jobs:
               with:
                 context: .
                 platforms: ${{ inputs.platforms }}
-                push: ${{ inputs.publish }}
+                push: true
                 build-args: |
                     MUMBLE_VERSION=${{ inputs.mumble_version }}
                 tags: ${{ env.TAGS }}
